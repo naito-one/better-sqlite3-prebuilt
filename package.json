@@ -1,0 +1,6 @@
+{
+  "name": "better-sqlite3-prebuilt",
+  "dependencies": {
+    "better-sqlite3": "7.5.3"
+  }
+}
