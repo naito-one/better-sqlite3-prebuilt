@@ -1,6 +1,11 @@
 const { copyFileSync, mkdirSync } = require("fs");
 
-const arch = process.arch;
+const achsMap = {
+  arm: "armv6hf",
+  arm64: "aarch64",
+};
+
+const arch = achsMap[process.arch] || process.arch;
 const version = require("./package.json").dependencies["better-sqlite3"];
 console.log("Current architecture:", arch);
 console.log("Current better-sqlite3 version:", version);
