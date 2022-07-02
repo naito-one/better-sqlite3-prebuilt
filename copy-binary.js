@@ -1,7 +1,7 @@
 const { copyFileSync, mkdirSync } = require("fs");
 
 const achsMap = {
-  arm: "armv6hf",
+  arm: "rpi",
   arm64: "aarch64",
 };
 
